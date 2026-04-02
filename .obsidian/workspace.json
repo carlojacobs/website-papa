@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ARTIKELEN/allemaal-collectief-arm-als-ideaal.md",
+                "file": "ARTIKELEN/test-artikel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "allemaal-collectief-arm-als-ideaal"
+              "title": "test-artikel"
             }
           }
         ]
@@ -186,6 +186,9 @@
   },
   "active": "05d34c97c8c677f1",
   "lastOpenFiles": [
+    "INSTRUCTIES.md",
+    "ARTIKELEN/test-artikel.md",
+    "ARTIKELEN/allemaal-collectief-arm-als-ideaal.md",
     "ARTIKELEN/de-excuustsunami.md",
     "ARTIKELEN/de-hautainiteit-van-schimmelpenninck.md",
     "ARTIKELEN/de-witte-man-als-minderheid.md",
@@ -196,7 +199,6 @@
     "ARTIKELEN/de-opmars-van-de-tweecelligen.md",
     "ARTIKELEN/ed-nijpels-en-de-gasrekening.md",
     "ARTIKELEN/de-volgevreten-kleinburger.md",
-    "INSTRUCTIES.md",
     "CONCEPTEN/VOORBEELD-ARTIKEL.md",
     "public/patrick-jacobs.jpg",
     "ARTIKELEN/smartphone-school-en-laaggeletterdheid.md",
@@ -211,8 +213,6 @@
     "ARTIKELEN/mogen-we-hem-inmiddels-domlinks-noemen.md",
     "ARTIKELEN/afgunstbelastingen-en-erfenissen.md",
     "ARTIKELEN/vacature-voor-onze-landsbestuurders.md",
-    "ARTIKELEN/over-het-woord-omvolking.md",
-    "ARTIKELEN/ruttes-erfenis-bij-de-navo.md",
     "tsconfig.tsbuildinfo",
     "tsconfig.json",
     "source.config.ts",
