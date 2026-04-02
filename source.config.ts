@@ -7,16 +7,16 @@ const dateLike = z.union([
 ]);
 
 const writingFrontmatterSchema = z.object({
-  title: z.string().optional().default("Untitled"),
-  created: dateLike,
-  summary: z.string().optional().default(""),
-  draft: z.boolean().optional().default(false),
-  updated: dateLike.optional(),
-});
+  titel: z.string().optional().default("Untitled"),
+  datum: dateLike,
+  samenvatting: z.string().optional().default(""),
+  concept: z.boolean().optional().default(false),
+  bijgewerkt: dateLike.optional(),
+}).transform((d) => ({ ...d, title: d.titel }));
 
 export const writing = defineCollections({
   type: "doc",
-  dir: "src/content/writing",
+  dir: "ARTIKELEN",
   schema: writingFrontmatterSchema,
 });
 
@@ -24,9 +24,9 @@ export const pages = defineCollections({
   type: "doc",
   dir: "src/content/pages",
   schema: z.object({
-    title: z.string().optional().default(""),
-    description: z.string().optional().default(""),
-  }),
+    titel: z.string().optional().default(""),
+    beschrijving: z.string().optional().default(""),
+  }).transform((d) => ({ ...d, title: d.titel, description: d.beschrijving })),
 });
 
 export default defineConfig();

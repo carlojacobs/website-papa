@@ -11,6 +11,6 @@ export const writingSource = loader({
 export function getPublishedPosts() {
   return writingSource
     .getPages()
-    .filter((page) => !page.data.draft)
-    .sort((a, b) => toMillis(b.data.created) - toMillis(a.data.created));
+    .filter((page) => !page.data.concept)
+    .sort((a, b) => toMillis(b.data.datum) - toMillis(a.data.datum));
 }

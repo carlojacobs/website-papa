@@ -26,14 +26,14 @@ export default async function WritingPostPage(props: {
     <article>
       <header className="article-header">
         <div className="article-date-row">
-          <time className="article-date" dateTime={formatIsoDate(page.data.created)}>
-            {formatLongDate(page.data.created)}
+          <time className="article-date" dateTime={formatIsoDate(page.data.datum)}>
+            {formatLongDate(page.data.datum)}
           </time>
           <span className="marginalia">gelezen in ~{readMinutes} min</span>
         </div>
-        <h1 className="article-title">{page.data.title}</h1>
-        {page.data.summary && (
-          <p className="article-summary">{page.data.summary}</p>
+        <h1 className="article-title">{page.data.titel}</h1>
+        {page.data.samenvatting && (
+          <p className="article-summary">{page.data.samenvatting}</p>
         )}
       </header>
       <div className="article-body">
@@ -59,7 +59,7 @@ export async function generateMetadata(props: {
   if (!page) notFound();
 
   return {
-    title: page.data.title,
-    description: page.data.summary || siteConfig.description,
+    title: page.data.titel,
+    description: page.data.samenvatting || siteConfig.description,
   };
 }

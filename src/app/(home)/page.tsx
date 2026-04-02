@@ -19,15 +19,15 @@ export default function HomePage() {
           <p className="featured-meta">
             <span className="section-label-inline">Meest recent</span>
             <span className="featured-meta-sep"> — </span>
-            <time dateTime={formatIsoDate(featured.data.created)}>
-              {formatLongDate(featured.data.created)}
+            <time dateTime={formatIsoDate(featured.data.datum)}>
+              {formatLongDate(featured.data.datum)}
             </time>
           </p>
           <span className="featured-title">
-            {featured.data.title}
+            {featured.data.titel}
           </span>
-          {featured.data.summary && (
-            <p className="featured-summary">{featured.data.summary}</p>
+          {featured.data.samenvatting && (
+            <p className="featured-summary">{featured.data.samenvatting}</p>
           )}
         </Link>
       )}
@@ -39,15 +39,15 @@ export default function HomePage() {
             <div className="post-list">
               {archive.map((post) => (
                 <Link key={post.url} href={post.url} className="post-item post-item-link">
-                  <time className="post-date" dateTime={formatIsoDate(post.data.created)}>
-                    {formatLongDate(post.data.created)}
+                  <time className="post-date" dateTime={formatIsoDate(post.data.datum)}>
+                    {formatLongDate(post.data.datum)}
                   </time>
                   <div>
                     <span className="post-title-link">
-                      {post.data.title}
+                      {post.data.titel}
                     </span>
-                    {post.data.summary && (
-                      <p className="post-summary-small">{post.data.summary}</p>
+                    {post.data.samenvatting && (
+                      <p className="post-summary-small">{post.data.samenvatting}</p>
                     )}
                   </div>
                 </Link>

@@ -4,9 +4,9 @@ import { formatIsoDate } from "@/lib/date";
 type PostListItem = {
   url: string;
   data: {
-    title: string;
-    created: unknown;
-    summary?: string;
+    titel: string;
+    datum: unknown;
+    samenvatting?: string;
   };
 };
 
@@ -24,15 +24,15 @@ export function PostList({ posts }: { posts: PostListItem[] }) {
     <div className="post-list">
       {posts.map((post) => (
         <article key={post.url} className="post-item">
-          <time className="post-date" dateTime={formatIsoDate(post.data.created)}>
-            {formatIsoDate(post.data.created)}
+          <time className="post-date" dateTime={formatIsoDate(post.data.datum)}>
+            {formatIsoDate(post.data.datum)}
           </time>
           <div>
             <Link href={post.url} className="post-title-link">
-              {post.data.title}
+              {post.data.titel}
             </Link>
-            {post.data.summary && (
-              <p className="post-summary-small">{post.data.summary}</p>
+            {post.data.samenvatting && (
+              <p className="post-summary-small">{post.data.samenvatting}</p>
             )}
           </div>
         </article>

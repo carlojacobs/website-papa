@@ -1,6 +1,6 @@
 ---
-title: About
-description: A short note about the site and the man behind it.
+titel: About
+beschrijving: A short note about the site and the man behind it.
 ---
 This is a plain little home on the internet.
 

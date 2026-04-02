@@ -10,9 +10,9 @@ export default function AboutPage() {
   return (
     <article>
       <header className="article-header">
-        <h1 className="article-title">{page.data.title || "Over"}</h1>
-        {page.data.description && (
-          <p className="article-summary">{page.data.description}</p>
+        <h1 className="article-title">{page.data.titel || "Over"}</h1>
+        {page.data.beschrijving && (
+          <p className="article-summary">{page.data.beschrijving}</p>
         )}
       </header>
       <div className="article-body">
