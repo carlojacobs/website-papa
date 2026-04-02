@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getPublishedPosts } from "@/lib/writing";
-import { formatIsoDate } from "@/lib/date";
+import { formatIsoDate, formatLongDate } from "@/lib/date";
 
 export default function HomePage() {
   const posts = getPublishedPosts();
@@ -10,21 +10,21 @@ export default function HomePage() {
   return (
     <>
       {featured && (
-        <section className="featured-section">
+        <Link href={featured.url} className="featured-section featured-block">
           <p className="featured-meta">
             <span className="section-label-inline">Meest recent</span>
             <span className="featured-meta-sep"> — </span>
             <time dateTime={formatIsoDate(featured.data.created)}>
-              {formatIsoDate(featured.data.created)}
+              {formatLongDate(featured.data.created)}
             </time>
           </p>
-          <Link href={featured.url} className="featured-title">
+          <span className="featured-title">
             {featured.data.title}
-          </Link>
+          </span>
           {featured.data.summary && (
             <p className="featured-summary">{featured.data.summary}</p>
           )}
-        </section>
+        </Link>
       )}
 
       {archive.length > 0 && (
@@ -34,19 +34,19 @@ export default function HomePage() {
             <p className="section-label">Archief</p>
             <div className="post-list">
               {archive.map((post) => (
-                <article key={post.url} className="post-item">
+                <Link key={post.url} href={post.url} className="post-item post-item-link">
                   <time className="post-date" dateTime={formatIsoDate(post.data.created)}>
-                    {formatIsoDate(post.data.created)}
+                    {formatLongDate(post.data.created)}
                   </time>
                   <div>
-                    <Link href={post.url} className="post-title-link">
+                    <span className="post-title-link">
                       {post.data.title}
-                    </Link>
+                    </span>
                     {post.data.summary && (
                       <p className="post-summary-small">{post.data.summary}</p>
                     )}
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </section>
