@@ -1,11 +1,10 @@
-// src/app/writing/[...slug]/page.tsx
-import Link from "next/link";
-import { topicSlug } from "@/lib/topics";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { writingSource } from "@/lib/writing";
 import { getMDXComponents } from "@/mdx-components";
 import { createRelativeLink } from "fumadocs-ui/mdx";
-import { formatDate, formatYearMonth, toMillis, formatLongDate } from "@/lib/date";
+import { formatIsoDate, formatLongDate } from "@/lib/date";
+import { siteConfig } from "@/lib/site";
 
 export default async function WritingPostPage(props: {
   params: Promise<{ slug?: string[] }>;
@@ -15,61 +14,45 @@ export default async function WritingPostPage(props: {
   const page = writingSource.getPage(params.slug);
   if (!page) notFound();
 
-  // ✅ Same as your docs route:
   const MDX = page.data.body;
 
   return (
-    <main>
-      <header className="mb-10">
-        <p className="text-sm opacity-70"><i>{formatLongDate(page.data.created)}</i></p>
-
-        <h1 className="mt-2 text-3xl font-semibold leading-tight">
-          {page.data.title}
-        </h1>
-
-        <div className="mt-3 text-sm opacity-70">
-        {page.data.categories.map((c: string, i: number) => (
-            <span key={c}>
-            <Link
-                href={`/topics/${topicSlug(c)}`}
-                className="underline underline-offset-4"
-            >
-                {c}
-            </Link>
-            {i < page.data.categories.length - 1 ? ", " : ""}
-            </span>
-        ))}
-
-        {page.data.updated ? (
-            <>
-            <span className="mx-2">·</span>
-            <span><i>last updated {formatLongDate(page.data.updated)}</i></span>
-            </>
+    <article className="paper-panel">
+      <header className="mb-8 border-b border-[var(--line-soft)] pb-5">
+        <p className="meta-label mb-3">Blog post</p>
+        <time className="date-stamp" dateTime={formatIsoDate(page.data.created)}>
+          {formatLongDate(page.data.created)}
+        </time>
+        <h1 className="page-title mt-3">{page.data.title}</h1>
+        {page.data.summary ? (
+          <p className="page-intro mt-4">{page.data.summary}</p>
         ) : null}
-        </div>
-
-
-
       </header>
 
-      <article className="prose prose-neutral max-w-none">
+      <div className="article-body">
         <MDX
           components={getMDXComponents({
-            // Allows relative file path linking inside your writing collection
             a: createRelativeLink(writingSource, page),
           })}
         />
-      </article>
-
-      <footer className="mt-16 text-sm opacity-70">
-        <Link href="/writing" className="underline underline-offset-4">
-          ← Writing
-        </Link>
-      </footer>
-    </main>
+      </div>
+    </article>
   );
 }
 
 export async function generateStaticParams() {
   return writingSource.generateParams();
+}
+
+export async function generateMetadata(props: {
+  params: Promise<{ slug?: string[] }>;
+}): Promise<Metadata> {
+  const params = await props.params;
+  const page = writingSource.getPage(params.slug);
+  if (!page) notFound();
+
+  return {
+    title: page.data.title,
+    description: page.data.summary || siteConfig.description,
+  };
 }

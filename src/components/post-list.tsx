@@ -1,0 +1,43 @@
+import Link from "next/link";
+import { formatIsoDate, formatLongDate } from "@/lib/date";
+
+type PostListItem = {
+  url: string;
+  data: {
+    title: string;
+    created: unknown;
+    summary?: string;
+  };
+};
+
+export function PostList({ posts }: { posts: PostListItem[] }) {
+  if (posts.length === 0) {
+    return (
+      <p className="page-intro">
+        No posts yet. Add a new file in <code>src/content/writing</code> and it
+        will appear here.
+      </p>
+    );
+  }
+
+  return (
+    <div className="post-list">
+      {posts.map((post) => (
+        <article key={post.url} className="post-row">
+          <time className="date-stamp" dateTime={formatIsoDate(post.data.created)}>
+            {formatLongDate(post.data.created)}
+          </time>
+
+          <div className="space-y-2">
+            <Link href={post.url} className="post-link">
+              {post.data.title}
+            </Link>
+            {post.data.summary ? (
+              <p className="post-summary">{post.data.summary}</p>
+            ) : null}
+          </div>
+        </article>
+      ))}
+    </div>
+  );
+}

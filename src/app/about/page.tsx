@@ -1,12 +1,6 @@
 import { notFound } from "next/navigation";
-import { loader } from "fumadocs-core/source";
-import { toFumadocsSource } from "fumadocs-mdx/runtime/server";
-import { pages } from "fumadocs-mdx:collections/server";
-
-const pagesSource = loader({
-  baseUrl: "/",
-  source: toFumadocsSource(pages, []),
-});
+import { getMDXComponents } from "@/mdx-components";
+import { pagesSource } from "@/lib/pages";
 
 export default function AboutPage() {
   const page = pagesSource.getPage(["about"]);
@@ -14,8 +8,12 @@ export default function AboutPage() {
 
   const MDX = page.data.body;
   return (
-    <main>
-      <MDX />
-    </main>
+    <section className="paper-panel">
+      <p className="meta-label mb-3">About</p>
+      <h1 className="page-title mb-5">{page.data.title || "About"}</h1>
+      <div className="article-body">
+        <MDX components={getMDXComponents()} />
+      </div>
+    </section>
   );
 }
