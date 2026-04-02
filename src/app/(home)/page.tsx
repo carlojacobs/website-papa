@@ -10,12 +10,8 @@ export default function HomePage() {
   return (
     <>
       {featured && (
-        <div className="marginalia-annotation">
-          <span className="marginalia">nieuwste stuk →</span>
-        </div>
-      )}
-      {featured && (
         <Link href={featured.url} className="featured-section featured-block">
+          <span className="marginalia featured-flare">nieuwste stuk →</span>
           <p className="featured-meta">
             <span className="section-label-inline">Meest recent</span>
             <span className="featured-meta-sep"> — </span>
@@ -34,7 +30,7 @@ export default function HomePage() {
 
       {archive.length > 0 && (
         <>
-          <section style={{ marginTop: "2.5rem" }}>
+          <section style={{ marginTop: "1.4rem" }}>
             <p className="section-label">Archief</p>
             <div className="post-list">
               {archive.map((post) => (
