@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to AI coding agents (e.g. OpenAI Codex, GitHub Copilot Workspace) when working with code in this repository.
 
 ## Commands
 
