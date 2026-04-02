@@ -11,10 +11,13 @@ export default function HomePage() {
     <>
       {featured && (
         <section className="featured-section">
-          <p className="section-label">Meest recent</p>
-          <time className="featured-date" dateTime={formatIsoDate(featured.data.created)}>
-            {formatIsoDate(featured.data.created)}
-          </time>
+          <p className="featured-meta">
+            <span className="section-label-inline">Meest recent</span>
+            <span className="featured-meta-sep"> — </span>
+            <time dateTime={formatIsoDate(featured.data.created)}>
+              {formatIsoDate(featured.data.created)}
+            </time>
+          </p>
           <Link href={featured.url} className="featured-title">
             {featured.data.title}
           </Link>
