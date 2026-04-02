@@ -23,7 +23,7 @@ export function formatIsoDate(input: unknown): string {
   return `${year}-${month}-${day}`;
 }
 
-export function formatLongDate(input: unknown, locale = "en-US"): string {
+export function formatLongDate(input: unknown, locale = "nl-NL"): string {
   const d = toDate(input);
   if (!d) return "";
 

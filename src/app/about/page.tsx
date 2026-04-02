@@ -8,12 +8,16 @@ export default function AboutPage() {
 
   const MDX = page.data.body;
   return (
-    <section className="paper-panel">
-      <p className="meta-label mb-3">About</p>
-      <h1 className="page-title mb-5">{page.data.title || "About"}</h1>
+    <article>
+      <header className="article-header">
+        <h1 className="article-title">{page.data.title || "Over"}</h1>
+        {page.data.description && (
+          <p className="article-summary">{page.data.description}</p>
+        )}
+      </header>
       <div className="article-body">
         <MDX components={getMDXComponents()} />
       </div>
-    </section>
+    </article>
   );
 }

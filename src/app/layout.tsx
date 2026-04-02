@@ -1,18 +1,14 @@
 import { RootProvider } from "fumadocs-ui/provider/next";
 import "./global.css";
 import Link from "next/link";
-import { Courier_Prime, Newsreader, Cormorant_Garamond } from "next/font/google";
+import { IM_Fell_English, Cormorant_Garamond, Courier_Prime } from "next/font/google";
 import { siteConfig } from "@/lib/site";
 
-const bodyFont = Newsreader({
+const bodyFont = IM_Fell_English({
   subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
   variable: "--font-body",
-});
-
-const monoFont = Courier_Prime({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-mono",
 });
 
 const displayFont = Cormorant_Garamond({
@@ -20,6 +16,12 @@ const displayFont = Cormorant_Garamond({
   weight: ["400", "500", "600"],
   style: ["normal", "italic"],
   variable: "--font-display",
+});
+
+const monoFont = Courier_Prime({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-mono",
 });
 
 export const metadata = {
@@ -30,46 +32,32 @@ export const metadata = {
   description: siteConfig.description,
 };
 
-export default function Layout({ children }: LayoutProps<"/">) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="nl"
-      className={`${bodyFont.variable} ${monoFont.variable} ${displayFont.variable}`}
+      className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-[var(--paper-base)] text-[var(--ink-strong)]">
+      <body>
         <RootProvider>
-          <div className="paper-grain min-h-screen">
-            <div className="mx-auto flex min-h-screen w-full max-w-4xl flex-col px-4 py-6 sm:px-6 sm:py-10">
-              <header className="paper-frame mb-8">
-                <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-                  <div className="space-y-2">
-                    <Link href="/" className="site-title">
-                      {siteConfig.name}
-                    </Link>
-                    <p className="site-tagline">{siteConfig.tagline}</p>
-                  </div>
+          <div className="site-wrapper">
+            <header className="site-header">
+              <Link href="/" className="site-name">
+                {siteConfig.name}
+              </Link>
+              <nav className="site-nav">
+                <Link href="/about" className="nav-link">Over</Link>
+                <Link href="/" className="nav-link">Schrijfsels</Link>
+              </nav>
+            </header>
+            <hr className="header-rule" />
 
-                  <nav className="flex flex-wrap gap-3 text-sm">
-                    <Link href="/" className="nav-link">
-                      Home
-                    </Link>
-                    <Link href="/writing" className="nav-link">
-                      Schrijfsels
-                    </Link>
-                    <Link href="/about" className="nav-link">
-                      Over
-                    </Link>
-                  </nav>
-                </div>
-              </header>
+            <main>{children}</main>
 
-              <main className="flex-1">{children}</main>
-
-              <footer className="mt-8 border-t border-[var(--line-soft)] pt-4 text-xs uppercase tracking-[0.22em] text-[var(--ink-muted)]">
-                Nauwkeurig gedateerd. Helder geschreven.
-              </footer>
-            </div>
+            <footer className="site-footer">
+              Nauwkeurig gedateerd. Helder geschreven.
+            </footer>
           </div>
         </RootProvider>
       </body>

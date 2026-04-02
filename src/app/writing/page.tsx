@@ -5,16 +5,10 @@ export default function WritingIndexPage() {
   const posts = getPublishedPosts();
 
   return (
-    <section className="paper-panel">
-      <p className="meta-label mb-3">Archief</p>
-      <h1 className="page-title">Alle teksten</h1>
-      <p className="page-intro mt-4">
-        Alles op één plek, gesorteerd op datum.
-      </p>
-
-      <div className="mt-8">
-        <PostList posts={posts} />
-      </div>
+    <section>
+      <h1 className="page-heading">Schrijfsels</h1>
+      <p className="page-tagline">Alles op één plek, gesorteerd op datum.</p>
+      <PostList posts={posts} />
     </section>
   );
 }
