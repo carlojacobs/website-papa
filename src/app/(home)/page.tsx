@@ -31,7 +31,7 @@ export default function HomePage() {
       {archive.length > 0 && (
         <>
           <section style={{ marginTop: "1.4rem" }}>
-            <p className="section-label">Archief</p>
+            <p className="section-label section-label-plain">AL HET SCHRIJFSEL</p>
             <div className="post-list">
               {archive.map((post) => (
                 <Link key={post.url} href={post.url} className="post-item post-item-link">

@@ -144,6 +144,11 @@ a { text-decoration: none; }
   translate: 0 -0.1em;
 }
 
+.section-label-plain::before {
+  content: none;
+  display: none;
+}
+
 /* ─── Featured post ──────────────────────────────────────────── */
 .featured-section {
   position: relative;
