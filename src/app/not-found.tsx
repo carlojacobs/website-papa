@@ -4,13 +4,13 @@ export default function NotFound() {
   return (
     <section className="paper-panel">
       <p className="meta-label mb-3">404</p>
-      <h1 className="page-title">Page not found</h1>
+      <h1 className="page-title">Pagina niet gevonden</h1>
       <p className="page-intro mt-4">
-        The page you were looking for is not in the archive.
+        De pagina die u zocht bevindt zich niet in het archief.
       </p>
       <div className="mt-6">
         <Link href="/" className="nav-link">
-          Return home
+          Terug naar home
         </Link>
       </div>
     </section>

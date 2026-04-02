@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Papa's Notes",
-  tagline: "A small archive of dated observations.",
-  description: "A text-first family blog with dated posts, a simple archive, and an about page.",
+  name: "Patrick Jacobs",
+  tagline: "Gedachten, verhalen en dagelijkse aantekeningen.",
+  description: "Persoonlijk blog van Patrick Jacobs — gedachten, verhalen en dagelijkse aantekeningen.",
   homeQuote: {
-    text: "If a thing can be fixed with a cup of coffee and ten quiet minutes, then it was never a real emergency.",
-    attribution: "Papa, probably",
+    text: "Als iets op te lossen is met een kop koffie en tien minuten stilte, was het nooit een echte noodsituatie.",
+    attribution: "Patrick, waarschijnlijk",
   },
 };

@@ -14,8 +14,8 @@ export function PostList({ posts }: { posts: PostListItem[] }) {
   if (posts.length === 0) {
     return (
       <p className="page-intro">
-        No posts yet. Add a new file in <code>src/content/writing</code> and it
-        will appear here.
+        Nog geen teksten. Voeg een bestand toe in <code>src/content/writing</code> en
+        het verschijnt hier.
       </p>
     );
   }

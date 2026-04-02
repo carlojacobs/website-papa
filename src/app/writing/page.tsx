@@ -6,10 +6,10 @@ export default function WritingIndexPage() {
 
   return (
     <section className="paper-panel">
-      <p className="meta-label mb-3">Archive</p>
-      <h1 className="page-title">All blog posts</h1>
+      <p className="meta-label mb-3">Archief</p>
+      <h1 className="page-title">Alle teksten</h1>
       <p className="page-intro mt-4">
-        Everything in one place, ordered by date and easy to scan.
+        Alles op één plek, gesorteerd op datum.
       </p>
 
       <div className="mt-8">
