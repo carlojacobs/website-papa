@@ -246,7 +246,6 @@ a { text-decoration: none; }
   letter-spacing: 0.1em;
   color: var(--ink-light);
   display: block;
-  margin-bottom: 0.7rem;
 }
 
 .article-title {
@@ -339,6 +338,30 @@ a { text-decoration: none; }
   padding-left: 1.4rem;
 }
 .article-body li + li { margin-top: 0.3rem; }
+
+/* ─── Marginalia ─────────────────────────────────────────────── */
+.marginalia {
+  font-family: var(--font-script), cursive;
+  font-size: 1.05rem;
+  color: var(--ink-light);
+  opacity: 0.72;
+  display: inline-block;
+  transform: rotate(-2deg);
+  line-height: 1;
+}
+
+.marginalia-annotation {
+  text-align: right;
+  margin-bottom: 0.6rem;
+  height: 1.4rem; /* reserve space so block doesn't jump */
+}
+
+.article-date-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
 
 /* ─── Footer ─────────────────────────────────────────────────── */
 .site-footer {

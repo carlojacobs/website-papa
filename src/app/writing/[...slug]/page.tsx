@@ -15,12 +15,22 @@ export default async function WritingPostPage(props: {
 
   const MDX = page.data.body;
 
+  const wordCount = page.data.structuredData.contents
+    .map((c: { content: string }) => c.content)
+    .join(" ")
+    .split(/\s+/)
+    .filter(Boolean).length;
+  const readMinutes = Math.max(1, Math.round(wordCount / 200));
+
   return (
     <article>
       <header className="article-header">
-        <time className="article-date" dateTime={formatIsoDate(page.data.created)}>
-          {formatIsoDate(page.data.created)}
-        </time>
+        <div className="article-date-row">
+          <time className="article-date" dateTime={formatIsoDate(page.data.created)}>
+            {formatIsoDate(page.data.created)}
+          </time>
+          <span className="marginalia">gelezen in ~{readMinutes} min</span>
+        </div>
         <h1 className="article-title">{page.data.title}</h1>
         {page.data.summary && (
           <p className="article-summary">{page.data.summary}</p>

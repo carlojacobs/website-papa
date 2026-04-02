@@ -1,7 +1,7 @@
 import { RootProvider } from "fumadocs-ui/provider/next";
 import "./global.css";
 import Link from "next/link";
-import { IM_Fell_English, Cormorant_Garamond, Courier_Prime } from "next/font/google";
+import { IM_Fell_English, Cormorant_Garamond, Courier_Prime, Caveat } from "next/font/google";
 import { siteConfig } from "@/lib/site";
 
 const bodyFont = IM_Fell_English({
@@ -24,6 +24,12 @@ const monoFont = Courier_Prime({
   variable: "--font-mono",
 });
 
+const scriptFont = Caveat({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-script",
+});
+
 export const metadata = {
   title: {
     default: siteConfig.name,
@@ -36,7 +42,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="nl"
-      className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable}`}
+      className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable} ${scriptFont.variable}`}
       suppressHydrationWarning
     >
       <body>

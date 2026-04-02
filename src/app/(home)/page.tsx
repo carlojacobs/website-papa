@@ -10,6 +10,11 @@ export default function HomePage() {
   return (
     <>
       {featured && (
+        <div className="marginalia-annotation">
+          <span className="marginalia">nieuwste stuk →</span>
+        </div>
+      )}
+      {featured && (
         <Link href={featured.url} className="featured-section featured-block">
           <p className="featured-meta">
             <span className="section-label-inline">Meest recent</span>
