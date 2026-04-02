@@ -29,7 +29,7 @@
 Wat leuks geschreven, bestanden van concept naar artikel verplaatst of andersom? Hier is hoe je de website update.
 
 1. Verplaats het bestand van **CONCEPTEN** naar **ARTIKELEN**.
-2. Druk op **Cmd+P**, typ `backup`, en kies **Obsidian Git: Create backup**.
+2. Druk op **Cmd+P**, typ `commit`, en kies **Git: Commit-and-sync**.
 
 De website wordt automatisch bijgewerkt — dit duurt ongeveer één minuut.
 
