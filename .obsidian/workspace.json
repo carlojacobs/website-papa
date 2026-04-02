@@ -11,10 +11,14 @@
             "id": "c7da7b669581f1f0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "CONCEPTEN/VOORBEELD-ARTIKEL.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "VOORBEELD-ARTIKEL"
             }
           }
         ]
@@ -182,6 +186,33 @@
   },
   "active": "05d34c97c8c677f1",
   "lastOpenFiles": [
+    "ARTIKELEN/de-witte-man-als-minderheid.md",
+    "ARTIKELEN/smartphone-school-en-laaggeletterdheid.md",
+    "ARTIKELEN/twijfelmoed-met-een-tik-naar-rechts.md",
+    "ARTIKELEN/van-veenbrand-naar-uitslaande-brand.md",
+    "ARTIKELEN/dom-links-en-het-stervende-debat.md",
+    "ARTIKELEN/de-ruggengraat-van-wilders.md",
+    "ARTIKELEN/sinds-wanneer-bemoeit-de-orde-zich-hiermee.md",
+    "ARTIKELEN/rob-jetten-moet-zich-schamen.md",
+    "ARTIKELEN/kent-de-minister-artikel-100.md",
+    "ARTIKELEN/hugo-de-jonge-naar-zeeland.md",
+    "ARTIKELEN/mogen-we-hem-inmiddels-domlinks-noemen.md",
+    "ARTIKELEN/afgunstbelastingen-en-erfenissen.md",
+    "ARTIKELEN/vacature-voor-onze-landsbestuurders.md",
+    "ARTIKELEN/over-het-woord-omvolking.md",
+    "ARTIKELEN/ruttes-erfenis-bij-de-navo.md",
+    "ARTIKELEN/hufterigheid-begint-niet-alleen-op-de-winkelvloer.md",
+    "ARTIKELEN/hadden-de-ministers-van-rutte-iv-kwaliteiten.md",
+    "ARTIKELEN/de-extreem-rechtse-glijbaan.md",
+    "ARTIKELEN/afwachten-wat-gekweld-links-doet.md",
+    "ARTIKELEN/imagine-en-geen-religie-meer.md",
+    "ARTIKELEN/de-opmars-van-de-tweecelligen.md",
+    "ARTIKELEN/mijn-volkskrant-met-afnemend-genoegen.md",
+    "ARTIKELEN/fabian-van-hal-en-het-bewijs.md",
+    "ARTIKELEN/klaver-baudet-en-moreel-gezuig.md",
+    "ARTIKELEN/gewoon-weer-de-tafel-van-tien.md",
+    "ARTIKELEN/mark-rutte-op-het-navo-schild.md",
+    "tsconfig.tsbuildinfo",
     "tsconfig.json",
     "source.config.ts",
     "postcss.config.mjs",
@@ -189,17 +220,7 @@
     "package.json",
     "next-env.d.ts",
     "next.config.mjs",
-    "README.md",
-    "CLAUDE.md",
     "content/docs",
-    "content",
-    "public/attachments",
-    "public",
-    "src/content/pages/about.md",
-    "_app/src/content/pages/about.md",
-    "_app/README.md",
-    "_app/CLAUDE.md",
-    "INSTRUCTIES.md",
-    "CONCEPTEN/VOORBEELD-ARTIKEL.md"
+    "content"
   ]
 }

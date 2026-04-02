@@ -1,0 +1,6 @@
+---
+titel: "Hadden de ministers van Rutte IV kwaliteiten?"
+datum: 2024-06-11
+samenvatting: "Een reactie op een column die nog iets positiefs in Rutte IV wilde zien, tegenover een lange lijst van schade en falen."
+---
+In zijn column van gisteren in deze krant stelt Wouter de Winter: 'Impopulair Rutte IV had ook kwaliteiten'. Vervolgens noemt hij een aantal ministers en wat die dan zouden hebben bereikt. Nou, wat mij betreft moeten ook die ministers zich diep schamen voor de toestand waarin dit land zich nu bevindt. Fors toenemende criminaliteit en agressiviteit, toeslagenaffaire, laaggeletterdheid, overbelaste politie, rechterlijke macht en jeugdzorg, de zogenaamde 'onze oorlog', veel meer immigratie dan onze verzorgingsstaat aankan en met aan zekerheid grenzende waarschijnlijkheid een groot ongeluk met onze pensioenen. Dit laatste mede met dank aan minister Schouten. En tot slot een minister-president die dit land meer dan goed voor ons is heeft uitgeleverd aan de Brusselse bureaucratie en die meer buitenland- dan binnenlandambities heeft vertoond. Ik begrijp de insteek van de heer De Winter om wat positiefs te roepen en op zich is dat prijzenswaardig, maar toch, ik weet niet of dit nou nodig was.

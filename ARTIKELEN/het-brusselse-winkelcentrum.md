@@ -1,0 +1,6 @@
+---
+titel: "Het Brusselse winkelcentrum"
+datum: 2024-01-31
+samenvatting: "Een beeldende beschrijving van Brussel als een verzameling winkeltjes die vooral hun eigen belang bewaken."
+---
+In een ingezonden brief van 31 januari in deze krant lees ik de volgende stelling van een kritische lezer: 'Gecentraliseerd bestuursbeleid vanuit Brussel werkt niet, simpelweg omdat de daar aanwezige ambtenaren de essentiële en benodigde vaardigheden missen om een goed en effectief dagelijks beleid te voeren.' Vervolgens stelt de lezer: 'Het lijkt meer op een winkelcentrum met allemaal kleine zelfstandigen.' Ik kan deze stellingen grotendeels onderschrijven maar zou het nog wat scherper willen stellen. Het gros van de daar aanwezige ambtenaren beschikt juist wel over meer dan voldoende essentiële en benodigde vaardigheden, namelijk die om hun eigen winkeltje zo belangrijk mogelijk te laten lijken. Daartoe verkopen zij een smurrie aan verstikkende en vaak idioot dure regelgeving en op de naleving daarvan zien zij vanuit hun winkeltjes uiteraard zelf fanatiek toe, want anders zou pijnlijk duidelijk worden hoe overbodig de meeste van die winkeltjes zijn. De hoop dat deze wereldvreemde ambtenaren ooit hun winkeltjes zullen opdoeken kunt u maar beter opgeven. Het Brusselse winkelcentrum is een warm bad voor talloze lichtgewichten.
