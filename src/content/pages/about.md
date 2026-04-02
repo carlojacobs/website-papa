@@ -1,16 +1,11 @@
 ---
-titel: About
-beschrijving: A short note about the site and the man behind it.
+titel: Over
+beschrijving: Observant, jurist, schrijver.
 ---
-This is a plain little home on the internet.
+Patrick Jacobs is observant, jurist en schrijver. Taal is zijn voertuig, nuance zijn voorkeur.
 
-It is meant for short notes, stories, memories, opinions, and the occasional practical observation that deserves to be written down instead of repeated at the dinner table for the tenth time.
+Hij studeerde in 1989 af als jurist, werkte daarna vier jaar als advocaat en is sinds 1995 werkzaam als bedrijfsjurist. Tussen de bedrijven door schrijft hij: korte beschouwingen, ingezonden brieven, persoonlijke observaties en stukken waarin gezond verstand het liefst het laatste woord krijgt.
 
-The site is deliberately simple:
+Wie zijn eerdere website kende, herkent hier dezelfde grondtoon. Eerst goed kijken, dan nadenken, en pas daarna iets zeggen. Luister wat beter naar elkaar, ga wat zuiniger om met grote woorden, en probeer de nuance niet direct te laten verdrinken in verontwaardiging of kabaal.
 
-- a front page with the latest posts
-- a proper archive with dates
-- individual pages for each post
-- no clutter and no feed full of distractions
-
-If you are editing this for your father, this page is a good place to add a short biography, a photograph, or a few lines about what he likes to write about.
+Op deze plek verzamelt hij een selectie van zijn stukken: brieven aan kranten, overwegingen over politiek en maatschappij, en af en toe een tekst die gewoon geschreven moest worden. Helder, persoonlijk en zonder franje.

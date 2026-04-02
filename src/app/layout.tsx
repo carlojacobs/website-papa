@@ -49,9 +49,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <RootProvider>
           <div className="site-wrapper">
             <header className="site-header">
-              <Link href="/" className="site-name">
-                {siteConfig.name}
-              </Link>
+              <div className="site-brand">
+                <Link href="/" className="site-name">
+                  {siteConfig.name}
+                </Link>
+                <span className="site-subtitle">
+                  <span className="site-subtitle-text">observant, jurist, schrijver</span>
+                </span>
+              </div>
               <nav className="site-nav">
                 <Link href="/about" className="nav-link">Over</Link>
                 <Link href="/" className="nav-link">Schrijfsels</Link>
