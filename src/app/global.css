@@ -7,7 +7,7 @@
   --bg:          #f8f5ee;
   --ink:         #1a1714;
   --ink-light:   #706860;
-  --accent:      #3b5e4a;
+  --accent:      #1c3125; /* prev: #3b5e4a */
   --rule:        rgba(26, 23, 20, 0.11);
   --rule-strong: rgba(26, 23, 20, 0.2);
 }
