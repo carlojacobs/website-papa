@@ -15,7 +15,7 @@ export function PostList({ posts }: { posts: PostListItem[] }) {
     return (
       <p style={{ color: "var(--ink-light)", fontStyle: "italic" }}>
         Nog geen teksten. Voeg een bestand toe in{" "}
-        <code>src/content/writing</code> en het verschijnt hier.
+        <code>ARTIKELEN</code> en het verschijnt hier.
       </p>
     );
   }

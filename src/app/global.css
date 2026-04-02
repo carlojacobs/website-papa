@@ -273,6 +273,54 @@ a { text-decoration: none; }
   margin-bottom: 2.8rem;
 }
 
+.pagination {
+  margin-top: 2.2rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.pagination-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.pagination-link,
+.pagination-page {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+
+.pagination-page {
+  min-width: 1.8rem;
+  text-align: center;
+}
+
+.pagination-page-current {
+  color: var(--ink);
+}
+
+.pagination-link:hover,
+.pagination-page:hover {
+  color: var(--accent);
+}
+
+.pagination-link-disabled {
+  opacity: 0.35;
+}
+
 /* ─── Article page ───────────────────────────────────────────── */
 .article-header {
   margin-bottom: 3.5rem;

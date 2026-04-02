@@ -58,8 +58,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </span>
               </div>
               <nav className="site-nav">
-                <Link href="/about" className="nav-link">Over</Link>
-                <Link href="/" className="nav-link">Schrijfsels</Link>
+                <Link href="/about" className="nav-link">Over mij</Link>
               </nav>
             </header>
             <hr className="header-rule" />
