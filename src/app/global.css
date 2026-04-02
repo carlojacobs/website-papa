@@ -440,14 +440,12 @@ a { text-decoration: none; }
 
 /* ─── Footer ─────────────────────────────────────────────────── */
 .site-footer {
-  margin-top: 5rem;
-  padding-top: 1.4rem;
-  border-top: 1px solid var(--rule);
-  font-family: var(--font-mono), monospace;
-  font-size: 0.68rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  margin-top: 4.8rem;
+  font-family: var(--font-script), cursive;
+  font-size: 1.35rem;
   color: var(--ink-light);
+  text-align: right;
+  transform: rotate(-1.2deg);
 }
 
 /* ─── Responsive ─────────────────────────────────────────────── */

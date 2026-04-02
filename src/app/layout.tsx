@@ -67,7 +67,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <main>{children}</main>
 
             <footer className="site-footer">
-              Nauwkeurig gedateerd. Helder geschreven.
+              Patrick Jacobs, Doorn
             </footer>
           </div>
         </RootProvider>
