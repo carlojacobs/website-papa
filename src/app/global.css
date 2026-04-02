@@ -87,7 +87,7 @@ a { text-decoration: none; }
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink-light);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
 }
 
 /* ─── Featured post ──────────────────────────────────────────── */
@@ -149,12 +149,12 @@ a { text-decoration: none; }
   color: var(--ink-light);
   font-size: 0.95rem;
   letter-spacing: 0.5em;
-  margin: 0.15rem 0;
+  margin: 1rem 0;
   opacity: 0.55;
 }
 
 /* ─── Post archive list ──────────────────────────────────────── */
-.post-list { margin-top: 0.4rem; }
+.post-list { margin-top: 0; }
 
 .post-item {
   display: grid;
