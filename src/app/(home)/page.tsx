@@ -34,8 +34,7 @@ export default function HomePage() {
 
       {archive.length > 0 && (
         <>
-          <div className="ornament">· · ·</div>
-          <section>
+          <section style={{ marginTop: "2.5rem" }}>
             <p className="section-label">Archief</p>
             <div className="post-list">
               {archive.map((post) => (

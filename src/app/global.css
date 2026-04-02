@@ -99,11 +99,12 @@ a { text-decoration: none; }
   content: '';
   display: inline-block;
   width: 2px;
-  height: 0.85em;
+  height: 1cap;
   background: var(--accent);
   border-radius: 1px;
   opacity: 0.75;
   flex-shrink: 0;
+  translate: 0 -0.1em;
 }
 
 /* ─── Featured post ──────────────────────────────────────────── */
