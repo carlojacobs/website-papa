@@ -11,14 +11,10 @@
             "id": "c7da7b669581f1f0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "INSTRUCTIES.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "INSTRUCTIES"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "INSTRUCTIES.md",
+                "file": "CLAUDE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for INSTRUCTIES"
+              "title": "Backlinks for CLAUDE"
             }
           },
           {
@@ -113,12 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "INSTRUCTIES.md",
+                "file": "CLAUDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from INSTRUCTIES"
+              "title": "Outgoing links from CLAUDE"
             }
           },
           {
@@ -156,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "INSTRUCTIES.md",
+                "file": "CLAUDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of INSTRUCTIES"
+              "title": "Outline of CLAUDE"
             }
           }
         ]
@@ -186,7 +182,23 @@
   },
   "active": "05d34c97c8c677f1",
   "lastOpenFiles": [
+    "tsconfig.json",
+    "source.config.ts",
+    "postcss.config.mjs",
+    "pnpm-lock.yaml",
+    "package.json",
+    "next-env.d.ts",
+    "next.config.mjs",
+    "README.md",
     "CLAUDE.md",
+    "content/docs",
+    "content",
+    "public/attachments",
+    "public",
+    "src/content/pages/about.md",
+    "_app/src/content/pages/about.md",
+    "_app/README.md",
+    "_app/CLAUDE.md",
     "INSTRUCTIES.md",
     "CONCEPTEN/VOORBEELD-ARTIKEL.md"
   ]

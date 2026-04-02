@@ -1,0 +1,11 @@
+{
+  "hidden": true,
+  "hiddenList": [
+    "content",
+    "node_modules",
+    "public",
+    "src",
+    "CLAUDE.md",
+    "README.md"
+  ]
+}
