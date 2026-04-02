@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { writingSource } from "@/lib/writing";
 import { getMDXComponents } from "@/mdx-components";
 import { createRelativeLink } from "fumadocs-ui/mdx";
-import { formatIsoDate } from "@/lib/date";
+import { formatIsoDate, formatLongDate } from "@/lib/date";
 import { siteConfig } from "@/lib/site";
 
 export default async function WritingPostPage(props: {
@@ -27,7 +27,7 @@ export default async function WritingPostPage(props: {
       <header className="article-header">
         <div className="article-date-row">
           <time className="article-date" dateTime={formatIsoDate(page.data.created)}>
-            {formatIsoDate(page.data.created)}
+            {formatLongDate(page.data.created)}
           </time>
           <span className="marginalia">gelezen in ~{readMinutes} min</span>
         </div>
