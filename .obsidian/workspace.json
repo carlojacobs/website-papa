@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ARTIKELEN/test.md",
+                "file": "INSTRUCTIES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test"
+              "title": "INSTRUCTIES"
             }
           }
         ]
@@ -184,14 +184,14 @@
       "obsidian-git:Open Git source control": true
     }
   },
-  "active": "05d34c97c8c677f1",
+  "active": "c7da7b669581f1f0",
   "lastOpenFiles": [
+    "ARTIKELEN/test.md",
+    "INSTRUCTIES.md",
     "src 2",
     "ARTIKELEN 2",
     "public 2",
     "CONCEPTEN 2",
-    "INSTRUCTIES.md",
-    "ARTIKELEN/test.md",
     "ARTIKELEN/test-artikel.md",
     "ARTIKELEN/allemaal-collectief-arm-als-ideaal.md",
     "ARTIKELEN/de-excuustsunami.md",
@@ -221,7 +221,6 @@
     "source.config.ts",
     "postcss.config.mjs",
     "pnpm-lock.yaml",
-    "package.json",
-    "next-env.d.ts"
+    "package.json"
   ]
 }
