@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "INSTRUCTIES.md",
+                "file": "CONCEPTEN/test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "INSTRUCTIES"
+              "title": "test"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Verkenner"
             }
           },
           {
@@ -174,20 +174,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": true,
-      "graph:Open graph view": true,
-      "canvas:Create new canvas": true,
-      "daily-notes:Open today's daily note": true,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": true,
+      "switcher:Open snel wisselen": false,
+      "graph:Open grafiek weergave": false,
+      "canvas:Nieuw doek aanmaken": false,
+      "daily-notes:Open de notitie van vandaag": false,
+      "templates:Sjabloon invoegen": false,
+      "command-palette:Open opdrachtenpaneel": false,
+      "bases:Nieuwe basis maken": false,
       "obsidian-git:Open Git source control": true
     }
   },
-  "active": "c7da7b669581f1f0",
+  "active": "05d34c97c8c677f1",
   "lastOpenFiles": [
-    "ARTIKELEN/test-artikel.md",
+    "src 2",
+    "ARTIKELEN 2",
+    "public 2",
+    "CONCEPTEN 2",
     "INSTRUCTIES.md",
+    "CONCEPTEN/test.md",
+    "ARTIKELEN/test-artikel.md",
     "ARTIKELEN/allemaal-collectief-arm-als-ideaal.md",
     "ARTIKELEN/de-excuustsunami.md",
     "ARTIKELEN/de-hautainiteit-van-schimmelpenninck.md",
@@ -211,17 +216,12 @@
     "ARTIKELEN/kent-de-minister-artikel-100.md",
     "ARTIKELEN/hugo-de-jonge-naar-zeeland.md",
     "ARTIKELEN/mogen-we-hem-inmiddels-domlinks-noemen.md",
-    "ARTIKELEN/afgunstbelastingen-en-erfenissen.md",
-    "ARTIKELEN/vacature-voor-onze-landsbestuurders.md",
     "tsconfig.tsbuildinfo",
     "tsconfig.json",
     "source.config.ts",
     "postcss.config.mjs",
     "pnpm-lock.yaml",
     "package.json",
-    "next-env.d.ts",
-    "next.config.mjs",
-    "content/docs",
-    "content"
+    "next-env.d.ts"
   ]
 }
