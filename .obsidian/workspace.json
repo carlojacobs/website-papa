@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CONCEPTEN/test.md",
+                "file": "ARTIKELEN/test.md",
                 "mode": "source",
                 "source": false
               },
@@ -191,7 +191,7 @@
     "public 2",
     "CONCEPTEN 2",
     "INSTRUCTIES.md",
-    "CONCEPTEN/test.md",
+    "ARTIKELEN/test.md",
     "ARTIKELEN/test-artikel.md",
     "ARTIKELEN/allemaal-collectief-arm-als-ideaal.md",
     "ARTIKELEN/de-excuustsunami.md",
